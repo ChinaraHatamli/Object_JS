@@ -400,7 +400,7 @@ const prompt = require("prompt-sync")();
 
 
 //validateNumbers: function() {
-//if (this.containsNumbers === true) {
+//if (this.containsNumbers = true) {
 //console.log("Password contains numbers");
 //} else {
 //console.log("Password doesnt contain numbers");
@@ -408,7 +408,7 @@ const prompt = require("prompt-sync")();
 //},
 
 //validateCharacters: function() {
-//if (this.containsSpecialCharacters === true) {
+//if (this.containsSpecialCharacters = true) {
 //console.log("Password contains special characters");
 //} else {
 //console.log("Password doesnt contain special characters");
@@ -437,11 +437,11 @@ const prompt = require("prompt-sync")();
 //area: 100,
 
 //calculateArea: function(calculate){
-//console.log (this.perimeter * this.area);
+//return (this.perimeter * this.area);
 //},
   
 //calculatePerimeter: function(calculate) {
-//console.log (2* this.perimeter + this.area);
+//return (2* this.perimeter + this.area);
 //}
 
 //}
@@ -555,5 +555,26 @@ const prompt = require("prompt-sync")();
 //person.ComperessionAvans ();
 
 
+
+
+//const company = { 
+//name: "Potterhead",
+
+
+//statusCompany: function (amount){
+//statusCompany = amount
+
+//if (statusCompany >= 1000000){
+//console.log ("The company earns a lot")
+//}else if(statusCompany >= 500000){
+//console.log ("The company is average")
+//}else if(statusCompany < 500000){
+//console.log ("The company earns a little")
+//}
+//}
+//}
+//company.statusCompany(1000000);
+//company.statusCompany(50000);
+//company.statusCompany(600000);
 
 
