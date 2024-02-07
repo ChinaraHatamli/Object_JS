@@ -319,23 +319,21 @@ const prompt = require("prompt-sync")();
 //accountNumber: 123,
 //ownerName: "Chinara",
 //balance: 10000,
-
-//addDeposit: function () {
-//console.log("Deposit " + this.balance + " Euro. New balance: " + (this.balance + 10000) + " Euro");
+//addDeposit: function (amount) {
+//console.log( this.balance += amount);
 //},
-
-//addWithdraw: function () {
-//console.log("Withdrawn " + this.balance + " Euro. New balance: " + (this.balance - 50) + " Euro");
+//addWithdraw: function (amount) {
+//console.log( (this.balance -= amount) );
 //},
-
-//addGetBalance: function () {
-//console.log("Balance: " + this.balance + " Euro");
+//addGetBalance: function (amount) {
+//console.log( this.balance);
 //}
 //};
 
-//bankAccount.addDeposit();
-//bankAccount.addWithdraw();
-//bankAccount.addGetBalance();
+//bankAccount.addDeposit(10000);
+//bankAccount.addWithdraw(50);
+//bankAccount.addGetBalance(10000);
+
 
 
 
@@ -344,32 +342,112 @@ const prompt = require("prompt-sync")();
 
   //Create an object that can convert temperatures between Celsius, Fahrenheit, and Kelvin.
 
+//const TemperatureConverter = {
+  
+//celsiusToFahrenheit: function(celsius) {
+//return (celsius * 9/5) + 32;
+//},
+
+//fahrenheitToCelsius: function(fahrenheit) {
+//return (fahrenheit - 32) * 5/9;
+//},
+
+//celsiusToKelvin: function(celsius) {
+//return celsius + 273.15;
+//},
+
+//kelvinToCelsius: function(kelvin) {
+//return kelvin - 273.15;
+//},
+
+//fahrenheitToKelvin: function(fahrenheit) {
+//return (fahrenheit + 459.67) * 5/9;
+//},
+
+//kelvinToFahrenheit: function(kelvin) {
+//return kelvin * 9/5 - 459.67;
+//}
+//};
+
+//console.log(TemperatureConverter.celsiusToFahrenheit(25));
+//console.log(TemperatureConverter.fahrenheitToCelsius(77));
+//console.log (TemperatureConverter.celsiusToKelvin(25));
+//console.log (TemperatureConverter.kelvinToCelsius(275));
+//console.log (TemperatureConverter.fahrenheitToKelvin(25));
+//console.log (TemperatureConverter.kelvinToFahrenheit(275));
+
+
+
+
 
 //Password Validator:
 
 //Create an object that validates passwords based on certain criteria (length, contains numbers, contains special characters, etc.).
+
+//const passwordValidator = {
+//length: 8,
+//containsNumbers: true,
+//containsSpecialCharacters: true,
+
+
+//validatePassword: function() {
+//if (this.length >= 8 ) {
+//console.log("Password is valid");
+//} else {
+//console.log("Password is not valid");
+//}
+//},
+
+
+//validateNumbers: function() {
+//if (this.containsNumbers === true) {
+//console.log("Password contains numbers");
+//} else {
+//console.log("Password doesnt contain numbers");
+//}
+//},
+
+//validateCharacters: function() {
+//if (this.containsSpecialCharacters === true) {
+//console.log("Password contains special characters");
+//} else {
+//console.log("Password doesnt contain special characters");
+//}
+  
+//}
+//};
+
+//passwordValidator.validatePassword();
+//passwordValidator.validateCharacters();
+//passwordValidator.validateNumbers();
+
+
+
+
+
+
 
 //1. Rectangle Object:
 
 //Create an object that represents a rectangle and can calculate its perimeter and area.
 
 
-const rectangle = {
-  perimeter: 100,
-    area: 100,
+//const rectangle = {
+//perimeter: 100,
+//area: 100,
 
- calculateArea: function(){
- console.log (this.perimeter * this.area);
-},
+//calculateArea: function(calculate){
+//console.log (this.perimeter * this.area);
+//},
   
-   calculatePerimeter: function() {
-   console.log (2* this.perimeter + this.area);
-}
+//calculatePerimeter: function(calculate) {
+//console.log (2* this.perimeter + this.area);
+//}
 
-}
+//}
 
-console.log(rectangle.calculateArea());
-console.log(rectangle.calculatePerimeter());
+//console.log(rectangle.calculateArea());
+//console.log(rectangle.calculatePerimeter());
 
 
 
@@ -378,7 +456,104 @@ console.log(rectangle.calculatePerimeter());
 
 //Create an object to manage a to-do list. It should be able to add a task, complete a task, and display all tasks.
 
+
+
+//const todolist = {
+//tasks: [],
+
+//addTask: function(task){
+//this.tasks.push (task);
+//console.log ("Task added succesfully");
+//},
+//completeTask: function(task) {
+//this.task1 = task;
+//console.log (this.task1 + " completed");
+//},
+//displayTask: function(task) {
+//console.log(this.task1);
+//},
+//}
+//todolist.addTask ("added");
+//todolist.completeTask ("do homework");
+//todolist.displayTask ("do homework");
+
+
+
 //3. Basic Counter Object:
 
 //Create an object that represents a counter and can increase, decrease, and reset the count.
+
+//const counter = {
+//count: 0,
+
+//increase: function() {
+//this.count++;
+//console.log("Count increased to", this.count);
+//},
+
+//decrease: function() {
+//this.count--;
+//console.log("Count decreased to", this.count);
+//},
+
+//reset: function() {
+//this.count = 0;
+//console.log("Count reset to", this.count);
+//}
+//};
+
  
+//counter.increase();
+//counter.increase();
+//counter.increase();
+//counter.increase();
+//counter.decrease();
+//counter.reset();
+
+
+
+
+//Mentor Tasks
+
+//const person = {
+//name: "Chinara",
+//surname: "Hatamli",
+//age: 30,
+//income: 10000,
+
+
+//calculateAnnualIncome: function() {
+//console.log(this.income * 12);
+//},
+
+//}
+
+//person.calculateAnnualIncome();
+
+
+
+//const person = {
+//name: "Chinara",
+//surname: "Hatamli",
+//age: 30,
+//income: 10000,
+
+  
+//calculateAnnualIncome: function() {
+//console.log(this.income * 12);
+//},
+
+//calculateAnnualwithAvans: function(amount){
+//this.income += amount;
+//console.log (this.income * 12);
+  
+//},
+//}
+
+//person.calculateAnnualIncome();
+//person.calculateAnnualwithAvans (100);
+//person.ComperessionAvans ();
+
+
+
+
